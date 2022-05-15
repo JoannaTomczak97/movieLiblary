@@ -34,4 +34,13 @@ public class Movie {
     public void setActor(Actor actor) {
         this.actor = actor;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", director=" + director +
+                ", actor=" + actor +
+                '}';
+    }
 }
