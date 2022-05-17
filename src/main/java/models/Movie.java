@@ -1,14 +1,17 @@
 package models;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Movie {
     private String title;
     private Director director;
-    private Actor actor;
+    private List<Actor> actorList;
 
-    public Movie(String title, Director director, Actor actor) {
+    public Movie(String title, Director director, List<Actor> actorList) {
         this.title = title;
         this.director = director;
-        this.actor = actor;
+        this.actorList = actorList;
     }
 
     public String getTitle() {
@@ -27,12 +30,12 @@ public class Movie {
         this.director = director;
     }
 
-    public Actor getActor() {
-        return actor;
+    public List<Actor> getActorList() {
+        return actorList;
     }
 
-    public void setActor(Actor actor) {
-        this.actor = actor;
+    public void setActorList(List<Actor> actorList) {
+        this.actorList = actorList;
     }
 
     @Override
@@ -40,7 +43,8 @@ public class Movie {
         return "Movie{" +
                 "title='" + title + '\'' +
                 ", director=" + director +
-                ", actor=" + actor +
+                ", actorList=" + actorList +
                 '}';
     }
 }
+

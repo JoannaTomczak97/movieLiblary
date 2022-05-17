@@ -1,15 +1,15 @@
 package models;
 
 public class Actor {
-    private String firstName;
-    private String lastName;
+    private static String firstName;
+    private static String lastName;
 
     public Actor(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public String getFirstName() {
+    public static String getFirstName() {
         return firstName;
     }
 
@@ -17,7 +17,7 @@ public class Actor {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    public static String getLastName() {
         return lastName;
     }
 
